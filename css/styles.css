@@ -1,0 +1,268 @@
+/*=============WebStudio=============*/
+:root {
+  --secondary-font: 'Raleway', sans-serif;
+  --accent-color: #2196f3;
+  --primary-color: #212121;
+  --secondary-text-color: #757575;
+  --title-text-color: #ffffff;
+  --background-color: #2f303a;
+  --wigets-link-background-color: #f5f4fa;
+  --logo-studio: #000000;
+  --mail-color: rgba(255, 255, 255, 0.6);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--primary-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/*=============Header=============*/
+
+.web,
+.studio {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  /* identical to box height */
+
+  letter-spacing: 0.03em;
+
+  color: var(--accent-color);
+}
+
+.studio {
+  color: var(--logo-studio);
+}
+
+.studio-footer {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  /* identical to box height */
+
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+.menu-link {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.menu-link:visited {
+  color: var(--primary-color);
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--accent-color);
+}
+
+.menu-link.active-link {
+  color: var(--accent-color);
+}
+
+.header-button,
+.tel-link-header {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--secondary-text-color);
+}
+
+.header-button:hover,
+.header-button:focus {
+  color: var(--accent-color);
+}
+
+.tel-link-header:hover,
+.tel-link-header:focus {
+  color: var(--accent-color);
+}
+/*=============End Header=============*/
+
+/*=============Hero=============*/
+.hero {
+  background-color: var(--background-color);
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  /* or 136% */
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--title-text-color);
+}
+
+.modal-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  /* identical to box height, or 187% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: var(--title-text-color);
+}
+
+.modal-btn {
+  cursor: pointer;
+  background-color: var(--accent-color);
+  border-radius: 4px;
+}
+
+/*=============End Hero=============*/
+
+/*=============Advantages=============*/
+
+.advantages-title-points {
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.advantages-text {
+  line-height: 1.71;
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-text-color);
+}
+/*============= End Advantages=============*/
+
+/*=============Our job=============*/
+.our-job-list,
+.our-team-list {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/*============= End Our job=============*/
+
+/*=============Our team=============*/
+
+.our-team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  /* identical to box height */
+
+  /* text-align: center; */
+  letter-spacing: 0.03em;
+}
+
+.our-team-specialty {
+  font-size: 16px;
+  line-height: 1.19;
+  /* identical to box height */
+
+  /* text-align: center; */
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-text-color);
+}
+/*============= End Our team=============*/
+
+/*=============Footer=============*/
+
+.footer {
+  background-color: var(--background-color);
+}
+
+.adress-link {
+  font-style: normal;
+  line-height: 1.71;
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+
+  color: var(--title-text-color);
+}
+.mail,
+.tel {
+  color: var(--mail-color);
+}
+
+.adress-link:hover,
+.adress-link:focus {
+  color: var(--accent-color);
+}
+/*=============End Footer=============*/
+
+/*=============End WebStudio=============*/
+
+/*=============Portfolio=============*/
+.wigets-link {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  /* identical to box height, or 162% */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.wigets-link {
+  background-color: var(--wigets-link-background-color);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.wigets-link:hover,
+.wigets-link:focus {
+  background-color: var(--accent-color);
+  color: var(--title-text-color);
+}
+
+.projects-list {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  /* identical to box height, or 200% */
+
+  letter-spacing: 0.06em;
+}
+
+.projects-links,
+.projects-links:visited {
+  color: var(--primary-color);
+}
+
+.projects-title {
+  font-size: 16px;
+  line-height: 1.88;
+  /* identical to box height, or 187% */
+
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-text-color);
+}
+/*=============End Portfolio=============*/
