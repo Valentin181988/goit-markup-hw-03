@@ -10,6 +10,10 @@
   --logo-studio: #000000;
   --mail-color: rgba(255, 255, 255, 0.6);
   --line: #ececec;
+  --border-card-content: #eeeeee;
+  --shadow-one: rgba(0, 0, 0, 0.12);
+  --shadow-two: rgba(0, 0, 0, 0.14);
+  --shadow-three: rgba(0, 0, 0, 0.2);
 }
 
 body {
@@ -39,6 +43,7 @@ ol {
 
 img {
   display: block;
+  max-width: 100%;
 }
 
 /*======= Components ========*/
@@ -50,7 +55,7 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   border: solid 1px;
-  border-color: tomato;
+  outline: 1px solid tomato;
 }
 
 .section-padding {
@@ -179,7 +184,7 @@ img {
   background-color: var(--background-color);
   text-align: center;
   border: solid 1px;
-  border-color: tomato;
+  outline: 1px solid tomato;
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -245,6 +250,9 @@ img {
 
   color: var(--secondary-text-color);
 }
+
+.advantages-description {
+}
 /*============= End Advantages=============*/
 
 /*=============Our job=============*/
@@ -256,7 +264,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   border: solid 1px;
-  border-color: tomato;
+  outline: 1px solid tomato;
 }
 
 .our-job-list {
@@ -316,8 +324,8 @@ img {
   background: var(--title-text-color);
   /* material shadow v1 */
 
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px var(--shadow-one), 0px 1px 1px var(--shadow-two),
+    0px 2px 1px var(--shadow-three);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -408,6 +416,24 @@ img {
   color: var(--title-text-color);
 }
 
+.progects-blocks {
+  outline: 1px solid tomato;
+}
+
+.projects-list {
+  margin-bottom: 4px;
+}
+
+.card-content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+
+  background: var(--title-text-color);
+  border: 1px solid var(--border-card-content);
+}
+
 .projects-list {
   font-weight: 700;
   font-size: 18px;
@@ -420,6 +446,17 @@ img {
 .projects-links,
 .projects-links:visited {
   color: var(--primary-color);
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projects-blocks {
+  flex-basis: calc((100% - 90) / 3;
+  margin-left: 30px;
+  margin-top: 30px;
 }
 
 .projects-title {
