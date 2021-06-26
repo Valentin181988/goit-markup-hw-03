@@ -14,6 +14,7 @@
   --shadow-one: rgba(0, 0, 0, 0.12);
   --shadow-two: rgba(0, 0, 0, 0.14);
   --shadow-three: rgba(0, 0, 0, 0.2);
+  --shadow-hero-button: rgba(0, 0, 0, 0.15);
 }
 
 body {
@@ -216,11 +217,13 @@ img {
 .modal-btn {
   cursor: pointer;
   background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px var(--shadow-hero-button);
   border-radius: 4px;
   padding-left: 32px;
   padding-right: 32px;
   padding-top: 10px;
   padding-bottom: 10px;
+  border: none;
 }
 
 /*=============End Hero=============*/
