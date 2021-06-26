@@ -312,12 +312,12 @@ img {
 
 .our-team-blocks {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   margin-top: -30px;
   margin-left: -30px;
 }
 
-.our-team-persons {
+.our-team-persons-wrapper {
   flex-basis: calc(100% / 4 - 30px);
   margin-top: 30px;
   margin-left: 30px;
