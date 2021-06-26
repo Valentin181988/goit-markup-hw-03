@@ -29,10 +29,32 @@ p {
   margin-bottom: 0;
 }
 
-ul {
+ul,
+ol {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+/*======= Components ========*/
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: solid 1px;
+  border-color: tomato;
+}
+
+.section-padding {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .list {
@@ -43,7 +65,45 @@ ul {
   text-decoration: none;
 }
 
+/*======= End of Components ========*/
+
 /*=============Header=============*/
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu-link-contacts {
+  display: flex;
+  align-items: center;
+}
+
+.header-button {
+  margin-right: 50px;
+}
+
+.link-logo {
+  padding-right: 93px;
+}
+
+.menu-link-list:not(:last-child) {
+  margin-right: 50px;
+}
 
 .web,
 .studio {
@@ -115,6 +175,11 @@ ul {
 /*=============Hero=============*/
 .hero {
   background-color: var(--background-color);
+  text-align: center;
+  border: solid 1px;
+  border-color: tomato;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -123,10 +188,10 @@ ul {
   line-height: 1.36;
   /* or 136% */
 
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-
+  margin-bottom: 30px;
+  margin-bottom: 30px;
   color: var(--title-text-color);
 }
 
@@ -136,7 +201,7 @@ ul {
   line-height: 1.88;
   /* identical to box height, or 187% */
 
-  display: flex;
+  display: inline-block;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -148,17 +213,26 @@ ul {
   cursor: pointer;
   background-color: var(--accent-color);
   border-radius: 4px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 /*=============End Hero=============*/
 
 /*=============Advantages=============*/
 
+.column {
+  display: flex;
+}
+
 .advantages-title-points {
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .advantages-text {
@@ -179,38 +253,87 @@ ul {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  border: solid 1px;
+  border-color: tomato;
 }
 
+.our-job-list {
+  margin-bottom: 50px;
+}
+
+.job-icons {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 94px;
+}
 /*============= End Our job=============*/
 
 /*=============Our team=============*/
+.our-team {
+  background-color: var(--wigets-link-background-color);
+}
 
-.our-team-name {
+.our-team-name,
+.our-team-specialty {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   /* identical to box height */
 
-  /* text-align: center; */
+  text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
 }
 
 .our-team-specialty {
-  font-size: 16px;
-  line-height: 1.19;
-  /* identical to box height */
-
-  /* text-align: center; */
+  font-weight: 400;
   letter-spacing: 0.03em;
-
+  padding-bottom: 30px;
+  margin-bottom: 0;
   color: var(--secondary-text-color);
 }
+
+.our-team-list {
+  margin-bottom: 50px;
+}
+
+.our-team-blocks {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+.our-team-image {
+  margin-bottom: 30px;
+}
+.our-team-persons {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-top: 30px;
+  margin-left: 30px;
+  background: var(--title-text-color);
+  /* material shadow v1 */
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
 /*============= End Our team=============*/
 
 /*=============Footer=============*/
 
 .footer {
   background-color: var(--background-color);
+}
+
+.footer-padding {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.adress-title {
+  margin-top: 20px;
 }
 
 .adress-link {
@@ -222,6 +345,11 @@ ul {
 
   color: var(--title-text-color);
 }
+
+.adress-list-link:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .mail,
 .tel {
   color: var(--mail-color);
