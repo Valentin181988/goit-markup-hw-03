@@ -232,6 +232,12 @@ img {
 
 .advantages-list {
   display: flex;
+  justify-content: space-between;
+}
+
+.advantages-list-points {
+  width: 270px;
+  height: 101px;
 }
 
 .advantages-title-points {
@@ -241,6 +247,12 @@ img {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
+
+.advantages-title-points {
+ 
+}
+
+
 
 .advantages-text {
   line-height: 1.71;
@@ -451,6 +463,8 @@ img {
 .projects {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  
 }
 
 .projects-blocks {
