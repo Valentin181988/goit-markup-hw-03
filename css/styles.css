@@ -399,6 +399,7 @@ img {
   padding-right: 22px;
   padding-top: 6px;
   padding-bottom: 6px;
+  border: none;
 }
 
 .wigets-link:hover,
