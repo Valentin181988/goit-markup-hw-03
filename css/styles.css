@@ -9,6 +9,7 @@
   --wigets-link-background-color: #f5f4fa;
   --logo-studio: #000000;
   --mail-color: rgba(255, 255, 255, 0.6);
+  --line: #ececec;
 }
 
 body {
@@ -68,14 +69,15 @@ img {
 /*======= End of Components ========*/
 
 /*=============Header=============*/
-.header {
-  padding-top: 24px;
-  padding-bottom: 25px;
-}
+
 .header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+  border-bottom: 1px solid var(--line);
 }
 
 .header-nav {
@@ -223,7 +225,7 @@ img {
 
 /*=============Advantages=============*/
 
-.column {
+.advantages-list {
   display: flex;
 }
 
