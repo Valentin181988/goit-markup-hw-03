@@ -366,6 +366,20 @@ img {
 /*=============End WebStudio=============*/
 
 /*=============Portfolio=============*/
+.wigets {
+  display: flex;
+  justify-content: center;
+}
+
+.wigwts-padding {
+  margin-top: 94px;
+  margin-bottom: 50px;
+}
+
+.wigets:not(:last-child) {
+  margin-right: 8px;
+}
+
 .wigets-link {
   font-family: inherit;
   font-weight: 500;
@@ -381,6 +395,10 @@ img {
   background-color: var(--wigets-link-background-color);
   border-radius: 4px;
   cursor: pointer;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
 .wigets-link:hover,
