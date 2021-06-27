@@ -250,8 +250,8 @@ img {
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: -30px;
-  margin-left: -30px;
+  margin-top: calc(-1 * var(--margin));
+  margin-left: calc(-1 * var(--margin));
 }
 
 .advantages-list-points {
@@ -301,8 +301,8 @@ img {
 
 .job-icons {
   display: flex;
-  margin-top: -30px;
-  margin-left: -30px;
+  margin-top: calc(-1 * var(--margin));
+  margin-left: calc(-1 * var(--margin));
 }
 
 .job-images {
@@ -347,8 +347,8 @@ img {
 .our-team-blocks {
   display: flex;
   flex-wrap: wrap;
-  margin-top: -30px;
-  margin-left: -30px;
+  margin-top: calc(-1 * var(--margin));
+  margin-left: calc(-1 * var(--margin));
 }
 
 .our-team-persons-wrapper {
@@ -474,8 +474,8 @@ img {
 .projects {
   display: flex;
   flex-wrap: wrap;
-  margin-top: -30px;
-  margin-left: -30px;
+  margin-top: calc(-1 * var(--margin));
+  margin-left: calc(-1 * var(--margin));
 }
 
 .projects-blocks {
