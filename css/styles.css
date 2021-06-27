@@ -108,20 +108,10 @@ img {
 }
 
 .link-logo {
-  margin-right: 93px;
   font-family: inherit;
   font-style: inherit;
   font-weight: 700;
-  color: var(--accent-color);
-}
-
-.menu-link-list:not(:last-child) {
-  margin-right: 50px;
-}
-
-.link-logo {
   font-family: var(--secondary-font);
-  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   /* identical to box height */
@@ -129,6 +119,14 @@ img {
   letter-spacing: 0.03em;
 
   color: var(--accent-color);
+}
+
+.header-nav .link-logo {
+  margin-right: 93px;
+}
+
+.menu-link-list:not(:last-child) {
+  margin-right: 50px;
 }
 
 .studio {
@@ -263,10 +261,6 @@ img {
   margin-left: var(--margin);
 }
 
-/* .advantages-list-points:not(:last-child) {
-    margin-right: 30px;
-} */
-
 .advantages-title-points {
   font-weight: 700;
   line-height: 1.14;
@@ -307,7 +301,14 @@ img {
 
 .job-icons {
   display: flex;
-  justify-content: space-between;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+.job-images {
+  flex-basis: calc((100% - 3 * var(--margin)) / 3);
+  margin-top: var(--margin);
+  margin-left: var(--margin);
 }
 /*============= End Our job=============*/
 
@@ -444,9 +445,6 @@ img {
 .wigets-link:focus {
   background-color: var(--accent-color);
   color: var(--title-text-color);
-}
-
-.projects-list {
 }
 
 .card-content {
