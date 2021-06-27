@@ -85,7 +85,6 @@ img {
 .header-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .header-nav {
@@ -101,6 +100,7 @@ img {
 .menu-link-contacts {
   display: flex;
   align-items: center;
+  margin-left: auto;
 }
 
 .header-button {
